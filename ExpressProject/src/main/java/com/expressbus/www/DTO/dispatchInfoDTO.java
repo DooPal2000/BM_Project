@@ -26,6 +26,7 @@ public class dispatchInfoDTO {
 	//seat table
 	int s_seatNum;
 	int s_busId;
+	
 	public String getT_name() {
 		return t_name;
 	}

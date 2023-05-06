@@ -12,6 +12,10 @@ import javax.servlet.http.HttpServletResponse;
 import com.expressbus.www.Command.BusRegisterCommand;
 import com.expressbus.www.Command.BusRegisterOKCommand;
 import com.expressbus.www.Command.Command;
+import com.expressbus.www.Command.ContentsOfNoticeCommand;
+import com.expressbus.www.Command.ShowNoticeCommnad;
+import com.expressbus.www.Command.loginCommand;
+import com.expressbus.www.Command.memberShipCommand;
 
 @WebServlet("*.do")
 public class FrontController extends HttpServlet {
@@ -28,21 +32,41 @@ public class FrontController extends HttpServlet {
 		String viewPage = null;
 		Command command = null;
 		
+		//배차등록(관리자)
 		if(commandName.equals("/busRegister.do")) {
 			command = new BusRegisterCommand();
 			command.excute(request, response);
 			viewPage = "busRegistration.jsp";
-		}else if(commandName.equals("/busRegisterOK.do")){
+		}
+		else if(commandName.equals("/busRegisterOK.do")){
 			command = new BusRegisterOKCommand();
 			command.excute(request, response);
 			viewPage = "membership.jsp";
 		}
-		//틀
-//		if(commandName.equals("")) {
-//			command = new ();
-//			command.excute(request, response);
-//			viewPage = "";
-//		}
+		//회원가입
+		else if(commandName.equals("/membership.do")) {
+			command = new memberShipCommand();
+			command.excute(request, response);
+			viewPage = "membership.jsp";
+		}
+		//로그인
+		else if(commandName.equals("/login.do")) {
+			command = new loginCommand();
+			command.excute(request, response);
+			viewPage = "Home.jsp";
+		}
+		//공지사항 리스트
+		else if(commandName.equals("/noticeList.do")) {
+			command = new ShowNoticeCommnad();
+			command.excute(request, response);
+			viewPage = "noticeList.jsp";
+		}
+		//공지사항 내용
+		else if(commandName.equals("/noticeContents.do")) {
+			command = new ContentsOfNoticeCommand();
+			command.excute(request, response);
+			viewPage = "noticeContents.jsp";
+		}
 		
 		RequestDispatcher dispatcher = request.getRequestDispatcher(viewPage);
 		dispatcher.forward(request, response);

@@ -35,6 +35,7 @@ public class busResDTO {
 	String c_detailAddress;
 	String c_extraAddress;
 	String c_tel;
+	
 	public String getT_name() {
 		return t_name;
 	}
