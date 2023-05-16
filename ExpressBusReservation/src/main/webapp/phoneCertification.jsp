@@ -6,8 +6,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Insert title here</title>
-<link rel="stylesheet" href="phoneCertification.css">
+<title>약관 동의</title>
+<link rel="stylesheet" href="css/phoneCertification.css">
 </head>
 <body>
 <section>
@@ -19,6 +19,7 @@
 		<span class="check">
 			<input type="checkbox" id="agree1" class="checkBox">
 			<label for="agree1"><i class="xi-check"></i>동의</label>
+			
 		</span>
 		<div class="scrollBox">
 			<div class="terms_wrap">
@@ -247,13 +248,14 @@
 		</div>
 	</div>
 	<input type="checkbox" id="agree3">
-	<label for="agree3" id="agreeAll" onclick="checkAll()"><i class="xi-check"></i>전체 약관에 동의합니다.</label>
+	<label for="agree3" id="agreeAll"><i class="xi-check"></i>전체 약관에 동의합니다.</label>
 	<div id = "btnBox">
 		<input type="button" id="agreeNo" value="동의하지 않음">
 		<input type="button" id="agreeYes" value="동의함" onclick="location.href='phoneCertification2.jsp'">
 	</div>
 	
 </section>
-<script src="phoneCertification.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="js/phoneCertification.js"></script>
 </body>
 </html>

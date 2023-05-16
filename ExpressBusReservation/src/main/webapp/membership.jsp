@@ -6,8 +6,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Insert title here</title>
-<link rel="stylesheet" href="membership.css">
+<title>회원가입</title>
+<link rel="stylesheet" href="css/membership.css">
 <%-- <style>
 	<%@ include file="header_side/header_side.css" %>
 </style> --%>
@@ -20,7 +20,7 @@
 		<div class="inputBox">
 			<div class="box">
 				<p>아이디</p>
-				<input type="text" id="id" placeholder="이메일주소를 입력하세요.">
+				<input type="text" id="id" placeholder="아이디를 입력하세요.">
 			</div>
 			<div class="box">
 				<p>비밀번호</p>
@@ -36,48 +36,13 @@
 			</div>
 			<div class="box">
 				<p>출생년도</p>
-				<!-- <input type="text" id="id" placeholder="선택하세요."> -->
 				<select name="YOB" id="select">
-					<option value="2009">2009</option>
-					<option value="2008">2008</option>
-					<option value="2007">2007</option>
-					<option value="2006">2006</option>
-					<option value="2005">2005</option>
-					<option value="2004">2004</option>
-					<option value="2003">2003</option>
-					<option value="2002">2002</option>
-					<option value="2001">2001</option>
-					<option value="2000">2000</option>
-					<option value="1999">1999</option>
-					<option value="1998">1998</option>
-					<option value="1997">1997</option>
-					<option value="1996">1996</option>
-					<option value="1995">1995</option>
-					<option value="1994">1994</option>
-					<option value="1993">1993</option>
-					<option value="1992">1992</option>
-					<option value="1991">1991</option>
-					<option value="1990">1990</option>
-					<option value="1989">1989</option>
-					<option value="1988">1988</option>
-					<option value="1987">1987</option>
-					<option value="1986">1986</option>
-					<option value="1985">1985</option>
-					<option value="1984">1984</option>
-					<option value="1983">1983</option>
-					<option value="1982">1982</option>
-					<option value="1981">1981</option>
-					<option value="1980">1980</option>
-					<option value="1979">1979</option>
-					<option value="1978">1978</option>
-					<option value="1977">1977</option>
-					<option value="1976">1976</option>
-					<option value="1975">1975</option>
-					<option value="1974">1974</option>
-					<option value="1973">1973</option>
-					<option value="1972">1972</option>
-					<option value="1971">1971</option>
-					<option value="1970">1970</option>
+					<option value="" disabled selected>선택하세요.</option>
+					<c:set var="valueText" value="2009" />
+					<c:forEach var="year" begin="1924" end="${valueText}" step="1">
+						<option value="${valueText }">${valueText }</option>
+						<c:set var = "valueText" value="${valueText-1 }" />
+					</c:forEach>
 				</select>
 			</div>
 			<div class="box" id="sexBox">
@@ -113,9 +78,6 @@
 		<input type="submit" value="회원가입">
 		</div>
 	</form>
-	<%-- <c:forEach begin=>
-		
-	</c:forEach> --%>
 	</div>
 </section>
 <script>
