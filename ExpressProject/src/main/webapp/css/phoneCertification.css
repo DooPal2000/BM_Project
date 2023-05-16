@@ -10,7 +10,7 @@ section p{
 	text-align: center;
 }
 section #clauseText span{
-	color: red;
+	box-shadow: inset 0 -11px 0 #8EA3BF; line-height: 21px
 }
 .scrollBox{
 	height: 120px;
@@ -46,7 +46,7 @@ section .agreement_tit .check label{
 	display: none;
 } */
 .check input:checked + label{
-	color: #68b3ce;
+	color: #F2BC8D;
 }
 section .agreement_tit .terms_wrap{
 	margin-top: 0;
@@ -70,7 +70,7 @@ th{
 	width:  21vw;
 	padding: 6px 0;
     font-weight: bold;
-    color: #68b3ce;
+    color: #F2BC8D;
     text-align: left;
     border-bottom: 1px solid #f1f2f4;
     border-top: 1px solid #a1a6b2;
@@ -107,8 +107,8 @@ input[type="checkbox"]{
 	display: none;
 }
 #agree3:checked + label {
-	color: #594cb5;
-    border: 1px solid #594cb5;
+	color: #F2BC8D;
+    border: 1px solid #F2BC8D;
 }
 #btnBox{
 	position: absolute;
@@ -122,14 +122,14 @@ input[type="checkbox"]{
 	color: white;
 }
 #agreeYes{
-	background: #5754b5;
+	background: #F29F8D;
 	color: white;
 }
 #agreeNo:hover{
 	background-color: #a1abc2;
 }
 #agreeYes:hover{
-	background-color: #4b4a73;
+	background-color: #E69785;
 }
 input[type="button"]{
 	border: none;

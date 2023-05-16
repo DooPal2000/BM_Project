@@ -12,14 +12,16 @@ public class dispatchInfoDTO {
 	String b_arrivalDate;
 	String b_departureDate;
 	String b_startTerminal;
+	String b_arrivalTerminal;
 	int b_busId;
 	
 	//busInfo table
 	int i_busId;
 	String i_grade;
 	String i_name;
-	int i_seatId;
+	int i_seatNum;
 	String i_price;
+	String i_busNum;
 	
 	//seat table
 	int s_seatNum;
@@ -61,6 +63,12 @@ public class dispatchInfoDTO {
 	public void setB_startTerminal(String b_startTerminal) {
 		this.b_startTerminal = b_startTerminal;
 	}
+	public String getB_arrivalTerminal() {
+		return b_arrivalTerminal;
+	}
+	public void setB_arrivalTerminal(String b_arrivalTerminal) {
+		this.b_arrivalTerminal = b_arrivalTerminal;
+	}
 	public int getB_busId() {
 		return b_busId;
 	}
@@ -85,17 +93,23 @@ public class dispatchInfoDTO {
 	public void setI_name(String i_name) {
 		this.i_name = i_name;
 	}
-	public int getI_seatId() {
-		return i_seatId;
+	public int getI_seatNum() {
+		return i_seatNum;
 	}
-	public void setI_seatId(int i_seatId) {
-		this.i_seatId = i_seatId;
+	public void setI_seatNum(int i_seatNum) {
+		this.i_seatNum = i_seatNum;
 	}
 	public String getI_price() {
 		return i_price;
 	}
 	public void setI_price(String i_price) {
 		this.i_price = i_price;
+	}
+	public String getI_busNum() {
+		return i_busNum;
+	}
+	public void setI_busNum(String i_busNum) {
+		this.i_busNum = i_busNum;
 	}
 	public int getS_seatNum() {
 		return s_seatNum;
@@ -109,6 +123,5 @@ public class dispatchInfoDTO {
 	public void setS_busId(int s_busId) {
 		this.s_busId = s_busId;
 	}
-	
 	
 }

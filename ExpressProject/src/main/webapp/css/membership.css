@@ -106,6 +106,8 @@ h1{
 #scrollBox{
 	width: 60%;
 	margin-left: 20%;
+	height: 10%;
+	overflow-y: scroll;
 }
 input[type="submit"]{
 	border: none;

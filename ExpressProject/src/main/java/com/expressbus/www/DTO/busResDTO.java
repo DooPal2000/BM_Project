@@ -16,14 +16,26 @@ public class busResDTO {
 	String b_arrivalDate;
 	String b_departureDate;
 	String b_startTerminal;
+	String b_arrivalTerminal;
 	int b_busId;
 	
 	//busInfo table
 	int i_busId;
 	String i_grade;
 	String i_name;
-	int i_seatId;
+	int i_seatNum;
 	String i_price;
+	String i_busNum;
+	
+	//company table
+	int c_no;
+	String c_name;
+	String c_postCode;
+	String c_address;
+	String c_detailAddress;
+	String c_extraAddress;
+	String c_tel;
+	
 	public String getT_name() {
 		return t_name;
 	}
@@ -72,6 +84,13 @@ public class busResDTO {
 	public void setB_startTerminal(String b_startTerminal) {
 		this.b_startTerminal = b_startTerminal;
 	}
+	
+	public String getB_arrivalTerminal() {
+		return b_arrivalTerminal;
+	}
+	public void setB_arrivalTerminal(String b_arrivalTerminal) {
+		this.b_arrivalTerminal = b_arrivalTerminal;
+	}
 	public int getB_busId() {
 		return b_busId;
 	}
@@ -96,11 +115,11 @@ public class busResDTO {
 	public void setI_name(String i_name) {
 		this.i_name = i_name;
 	}
-	public int getI_seatId() {
-		return i_seatId;
+	public int getI_seatNum() {
+		return i_seatNum;
 	}
-	public void setI_seatId(int i_seatId) {
-		this.i_seatId = i_seatId;
+	public void setI_seatNum(int i_seatNum) {
+		this.i_seatNum = i_seatNum;
 	}
 	public String getI_price() {
 		return i_price;
@@ -108,4 +127,55 @@ public class busResDTO {
 	public void setI_price(String i_price) {
 		this.i_price = i_price;
 	}
+	
+	public String getI_busNum() {
+		return i_busNum;
+	}
+	public void setI_busNum(String i_busNum) {
+		this.i_busNum = i_busNum;
+	}
+	public int getC_no() {
+		return c_no;
+	}
+	public void setC_no(int c_no) {
+		this.c_no = c_no;
+	}
+	public String getC_name() {
+		return c_name;
+	}
+	public void setC_name(String c_name) {
+		this.c_name = c_name;
+	}
+	public String getC_postCode() {
+		return c_postCode;
+	}
+	public void setC_postCode(String c_postCode) {
+		this.c_postCode = c_postCode;
+	}
+	public String getC_address() {
+		return c_address;
+	}
+	public void setC_address(String c_address) {
+		this.c_address = c_address;
+	}
+	public String getC_detailAddress() {
+		return c_detailAddress;
+	}
+	public void setC_detailAddress(String c_detailAddress) {
+		this.c_detailAddress = c_detailAddress;
+	}
+	public String getC_extraAddress() {
+		return c_extraAddress;
+	}
+	public void setC_extraAddress(String c_extraAddress) {
+		this.c_extraAddress = c_extraAddress;
+	}
+	public String getC_tel() {
+		return c_tel;
+	}
+	public void setC_tel(String c_tel) {
+		this.c_tel = c_tel;
+	}
+
+	
 }
