@@ -1,8 +1,19 @@
 @charset "UTF-8";
+<<<<<<< HEAD:고속버스_중간합본/src/main/webapp/css/membership.css
+=======
+
+>>>>>>> gemoon:ExpressBusReservation/src/main/webapp/css/membership.css
 #information{
 	width: 95%;
 	height: 100vh;
 }
+<<<<<<< HEAD:고속버스_중간합본/src/main/webapp/css/membership.css
+=======
+section #titleText{
+	font-size: 24px;
+	text-align: center;
+}
+>>>>>>> gemoon:ExpressBusReservation/src/main/webapp/css/membership.css
 .inputBox{
 	border: 1px solid #e6e6e6;
 	width: 100%;

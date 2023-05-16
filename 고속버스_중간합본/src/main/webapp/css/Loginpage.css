@@ -1,7 +1,13 @@
 @charset "UTF-8";
 
 	.wrapper{display:flex;}
+<<<<<<< HEAD:고속버스_중간합본/src/main/webapp/css/Loginpage.css
 	.page{margin : 0 auto; margin-top:40vh;width : 55%; height :100%;}
+=======
+	.page{position: absolute;
+    top: 35%;
+    left: 30%;width : 55%; height :100%;}
+>>>>>>> gemoon:ExpressBusReservation/src/main/webapp/css/Loginpage.css
 	.box_login{border:1px solid #DCDCDC;  }
 	.mob_h3{font-size:32px; line-height: 0.5; font-weight: lighter; text-align: center;}
 	.mob_p{text-align : center;}
