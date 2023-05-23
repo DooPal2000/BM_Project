@@ -1,14 +1,17 @@
 @charset "UTF-8";
-#information{
+
+#information {
 	width: 95%;
 	height: 100vh;
 }
-.inputBox{
+
+.inputBox {
 	border: 1px solid #e6e6e6;
 	width: 100%;
 	height: 105vh;
 }
-.inputBox .box{
+
+.inputBox .box {
 	width: 60%;
 	height: 8%;
 	margin-left: 20%;
@@ -16,7 +19,8 @@
 	background-color: #f3f4f6;
 	position: relative;
 }
-.inputBox .box > p{
+
+.inputBox .box>p {
 	font-size: 12px;
 	font-weight: bold;
 	color: #666;
@@ -24,7 +28,8 @@
 	padding-left: 2%;
 	text-align: left;
 }
-.inputBox .box input{
+
+.inputBox .box input {
 	width: 95%;
 	height: 40%;
 	top: 40%;
@@ -34,67 +39,82 @@
 	border: none;
 	font-size: 16px;
 }
-.inputBox .box #sex{
+
+.inputBox .box #sex {
 	float: left;
 	width: 10px;
 	height: 10px;
 	display: inline;
 }
-input[type="radio"]{
+
+input[type="radio"] {
 	display: none;
 }
-input[type="checkbox"]{
+
+input[type="checkbox"] {
 	display: none;
 }
-#sexBox{
+
+#sexBox {
 	width: 60%;
 	height: 10%;
 }
-#sexBox label{
+
+#sexBox label {
 	padding-right: 38%;
-    margin-left: 2%;
-   height: 10vh;
-  	color: #BFBFBF;
-  	font-size: 18px;
+	margin-left: 2%;
+	height: 10vh;
+	color: #BFBFBF;
+	font-size: 18px;
 }
-input::placeholder{
+
+input::placeholder {
 	color: #BFBFBF;
 }
-#f:checked + label{
+
+#f:checked+label {
 	color: black;
 }
-#m:checked + label{
+
+#m:checked+label {
 	color: black;
 }
-#agree:checked + label{
+
+#agree:checked+label {
 	color: #68b3ce;
 }
-h4{
+
+h4 {
 	font-size: 20px;
 	font-weight: normal;
 	display: inline-block;
 	margin-left: 20%;
 	padding-top: 3%;
 }
-h4 > span{
+
+h4>span {
 	font-size: 15px;
 	color: #b3b3b3;
 }
-h1{
+
+h1 {
 	font-weight: bold;
 	text-align: center;
 	margin: 10px 0;
 }
-.terms_wrap *{
+
+.terms_wrap * {
 	font-size: 13px;
 }
-.terms_wrap > p{
+
+.terms_wrap>p {
 	margin-left: 2%;
 	color: red;
 	text-align: left;
 	padding-bottom: 3%;
 }
-.check label{
+
+.check label {
 	cursor: pointer;
 	color: #b3b3b3;
 	margin-right: 18%;
@@ -103,13 +123,15 @@ h1{
 	line-height: 5;
 	padding-top: 3%;
 }
-#scrollBox{
+
+#scrollBox {
 	width: 60%;
 	margin-left: 20%;
 	height: 10%;
 	overflow-y: scroll;
 }
-input[type="submit"]{
+
+input[type="submit"] {
 	border: none;
 	background-color: #b8becc;
 	width: 18%;
@@ -118,10 +140,12 @@ input[type="submit"]{
 	margin-top: 2%;
 	margin-left: 40%;
 }
-input[type="submit"]:hover{
+
+input[type="submit"]:hover {
 	background: #a1abc2;
 }
-#select{
+
+#select {
 	width: 95%;
 	height: 50%;
 	background-color: #f3f4f6;
