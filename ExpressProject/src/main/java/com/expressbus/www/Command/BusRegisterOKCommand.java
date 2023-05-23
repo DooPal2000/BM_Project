@@ -48,4 +48,8 @@ public class BusRegisterOKCommand implements Command{
 		
 		dao.insertBusDAO(dto);
 		}
+<<<<<<< HEAD
+=======
+	
+>>>>>>> cf0e7d3c8e31d53fec6d76f80cd1f6a8530ca462
 }

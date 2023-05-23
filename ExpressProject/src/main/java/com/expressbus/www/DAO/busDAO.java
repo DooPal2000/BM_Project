@@ -10,6 +10,10 @@ import java.time.DayOfWeek;
 import java.time.LocalDate;
 import java.util.ArrayList;
 
+<<<<<<< HEAD
+=======
+import com.expressbus.www.DTO.NoticeDTO;
+>>>>>>> cf0e7d3c8e31d53fec6d76f80cd1f6a8530ca462
 import com.expressbus.www.DTO.busResDTO;
 import com.expressbus.www.DTO.memManageDTO;
 
@@ -32,6 +36,7 @@ private static busDAO busDAO = new busDAO();
 			System.out.println("드라이버 로드 실패");
 		}
 	}
+<<<<<<< HEAD
 
 	// 이메일 변경
 	public int chgEmailDao(memManageDTO dto) {
@@ -160,6 +165,8 @@ private static busDAO busDAO = new busDAO();
 		}
 		return dto;
 	}
+=======
+>>>>>>> cf0e7d3c8e31d53fec6d76f80cd1f6a8530ca462
 	
 	//배차등록 폼 설정
 	public ArrayList<busResDTO> getTerminalDAO() {
@@ -315,4 +322,49 @@ private static busDAO busDAO = new busDAO();
 		}
 		return -1;
 	}
+<<<<<<< HEAD
+=======
+	
+	//공지사항 리스트 출력
+	public ArrayList<NoticeDTO> noticeListDAO(){
+		ArrayList<NoticeDTO> list = new ArrayList<>();
+		final String GET_NOTICE_SQL = "SELECT * FROM notice";
+		
+		try (Connection conn = DriverManager.getConnection(url, user, pw);
+				PreparedStatement pstmt = conn.prepareStatement(GET_NOTICE_SQL);
+				ResultSet rs = pstmt.executeQuery(GET_NOTICE_SQL)){
+			while(rs.next()) {
+				NoticeDTO dto = new NoticeDTO();
+				dto.setN_no(rs.getInt("n_no"));
+				dto.setN_title(rs.getString("n_title"));
+				dto.setN_contents(rs.getString("n_contents"));
+				dto.setN_wTime(rs.getString("n_wTime"));
+				list.add(dto);
+			}
+		}catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return list;
+	}
+	
+	//제목에 맞는 공지사항 내용출력
+	public NoticeDTO ContentsOfNoticeDAO(String title) {
+		NoticeDTO dto = new NoticeDTO();
+		final String GET_NOTICE_SQL = "SELECT * FROM notice WHERE n_title = '" + title + "'";
+		
+		try (Connection conn = DriverManager.getConnection(url, user, pw);
+				PreparedStatement pstmt = conn.prepareStatement(GET_NOTICE_SQL);
+				ResultSet rs = pstmt.executeQuery(GET_NOTICE_SQL)){
+			if(rs.next()) {
+				dto.setN_no(rs.getInt("n_no"));
+				dto.setN_title(rs.getString("n_title"));
+				dto.setN_contents(rs.getString("n_contents"));
+				dto.setN_wTime(rs.getString("n_wTime"));
+			}
+		}catch(SQLException e) {
+			e.printStackTrace();
+		}
+		return dto;
+	}
+>>>>>>> cf0e7d3c8e31d53fec6d76f80cd1f6a8530ca462
 }

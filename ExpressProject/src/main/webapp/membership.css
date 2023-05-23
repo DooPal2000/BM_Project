@@ -1,5 +1,4 @@
 @charset "UTF-8";
-<<<<<<< HEAD
 
 #information {
 	width: 95%;
@@ -7,23 +6,12 @@
 }
 
 .inputBox {
-=======
-#information{
-	width: 95%;
-	height: 100vh;
-}
-.inputBox{
->>>>>>> cf0e7d3c8e31d53fec6d76f80cd1f6a8530ca462
 	border: 1px solid #e6e6e6;
 	width: 100%;
 	height: 105vh;
 }
-<<<<<<< HEAD
 
 .inputBox .box {
-=======
-.inputBox .box{
->>>>>>> cf0e7d3c8e31d53fec6d76f80cd1f6a8530ca462
 	width: 60%;
 	height: 8%;
 	margin-left: 20%;
@@ -31,12 +19,8 @@
 	background-color: #f3f4f6;
 	position: relative;
 }
-<<<<<<< HEAD
 
 .inputBox .box>p {
-=======
-.inputBox .box > p{
->>>>>>> cf0e7d3c8e31d53fec6d76f80cd1f6a8530ca462
 	font-size: 12px;
 	font-weight: bold;
 	color: #666;
@@ -44,12 +28,8 @@
 	padding-left: 2%;
 	text-align: left;
 }
-<<<<<<< HEAD
 
 .inputBox .box input {
-=======
-.inputBox .box input{
->>>>>>> cf0e7d3c8e31d53fec6d76f80cd1f6a8530ca462
 	width: 95%;
 	height: 40%;
 	top: 40%;
@@ -59,18 +39,13 @@
 	border: none;
 	font-size: 16px;
 }
-<<<<<<< HEAD
 
 .inputBox .box #sex {
-=======
-.inputBox .box #sex{
->>>>>>> cf0e7d3c8e31d53fec6d76f80cd1f6a8530ca462
 	float: left;
 	width: 10px;
 	height: 10px;
 	display: inline;
 }
-<<<<<<< HEAD
 
 input[type="radio"] {
 	display: none;
@@ -110,45 +85,12 @@ input::placeholder {
 }
 
 h4 {
-=======
-input[type="radio"]{
-	display: none;
-}
-input[type="checkbox"]{
-	display: none;
-}
-#sexBox{
-	width: 60%;
-	height: 10%;
-}
-#sexBox label{
-	padding-right: 38%;
-    margin-left: 2%;
-   height: 10vh;
-  	color: #BFBFBF;
-  	font-size: 18px;
-}
-input::placeholder{
-	color: #BFBFBF;
-}
-#f:checked + label{
-	color: black;
-}
-#m:checked + label{
-	color: black;
-}
-#agree:checked + label{
-	color: #68b3ce;
-}
-h4{
->>>>>>> cf0e7d3c8e31d53fec6d76f80cd1f6a8530ca462
 	font-size: 20px;
 	font-weight: normal;
 	display: inline-block;
 	margin-left: 20%;
 	padding-top: 3%;
 }
-<<<<<<< HEAD
 
 h4>span {
 	font-size: 15px;
@@ -156,41 +98,23 @@ h4>span {
 }
 
 h1 {
-=======
-h4 > span{
-	font-size: 15px;
-	color: #b3b3b3;
-}
-h1{
->>>>>>> cf0e7d3c8e31d53fec6d76f80cd1f6a8530ca462
 	font-weight: bold;
 	text-align: center;
 	margin: 10px 0;
 }
-<<<<<<< HEAD
 
 .terms_wrap * {
 	font-size: 13px;
 }
 
 .terms_wrap>p {
-=======
-.terms_wrap *{
-	font-size: 13px;
-}
-.terms_wrap > p{
->>>>>>> cf0e7d3c8e31d53fec6d76f80cd1f6a8530ca462
 	margin-left: 2%;
 	color: red;
 	text-align: left;
 	padding-bottom: 3%;
 }
-<<<<<<< HEAD
 
 .check label {
-=======
-.check label{
->>>>>>> cf0e7d3c8e31d53fec6d76f80cd1f6a8530ca462
 	cursor: pointer;
 	color: #b3b3b3;
 	margin-right: 18%;
@@ -199,23 +123,15 @@ h1{
 	line-height: 5;
 	padding-top: 3%;
 }
-<<<<<<< HEAD
 
 #scrollBox {
-=======
-#scrollBox{
->>>>>>> cf0e7d3c8e31d53fec6d76f80cd1f6a8530ca462
 	width: 60%;
 	margin-left: 20%;
 	height: 10%;
 	overflow-y: scroll;
 }
-<<<<<<< HEAD
 
 input[type="submit"] {
-=======
-input[type="submit"]{
->>>>>>> cf0e7d3c8e31d53fec6d76f80cd1f6a8530ca462
 	border: none;
 	background-color: #b8becc;
 	width: 18%;
@@ -224,19 +140,12 @@ input[type="submit"]{
 	margin-top: 2%;
 	margin-left: 40%;
 }
-<<<<<<< HEAD
 
 input[type="submit"]:hover {
 	background: #a1abc2;
 }
 
 #select {
-=======
-input[type="submit"]:hover{
-	background: #a1abc2;
-}
-#select{
->>>>>>> cf0e7d3c8e31d53fec6d76f80cd1f6a8530ca462
 	width: 95%;
 	height: 50%;
 	background-color: #f3f4f6;

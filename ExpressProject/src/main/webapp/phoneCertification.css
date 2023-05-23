@@ -1,24 +1,15 @@
 @charset "UTF-8";
 
-<<<<<<< HEAD
 section #clauseText {
 	width: 70%;
 	margin-left: 15%;
 }
 
 section p {
-=======
-section #clauseText{
-	width: 70%;
-	margin-left: 15%;
-}
-section p{
->>>>>>> cf0e7d3c8e31d53fec6d76f80cd1f6a8530ca462
 	font-size: 24px;
 	font-family: 'Malgun Gothic', '맑은고딕', sans-serif;
 	text-align: center;
 }
-<<<<<<< HEAD
 
 section #clauseText span {
 	box-shadow: inset 0 -11px 0 #8EA3BF;
@@ -26,38 +17,24 @@ section #clauseText span {
 }
 
 .scrollBox {
-=======
-section #clauseText span{
-	box-shadow: inset 0 -11px 0 #8EA3BF; line-height: 21px
-}
-.scrollBox{
->>>>>>> cf0e7d3c8e31d53fec6d76f80cd1f6a8530ca462
 	height: 120px;
 	overflow-y: scroll;
 	border-bottom: 1px solid #f1f2f4;
 	border-top: 1px solid #a1a6b2;
 	width: 100%;
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> cf0e7d3c8e31d53fec6d76f80cd1f6a8530ca462
 section .agreement_tit {
 	position: relative;
 	/* border-bottom: 1px solid #a1a6b2; */
 }
-<<<<<<< HEAD
 
 section .agreement_tit>h4 {
-=======
-section .agreement_tit > h4{
->>>>>>> cf0e7d3c8e31d53fec6d76f80cd1f6a8530ca462
 	font-size: 20px;
 	font-weight: normal;
 	display: inline-block;
 	margin-bottom: 1%;
 }
-<<<<<<< HEAD
 
 section .agreement_tit>h4>span {
 	font-size: 15px;
@@ -65,13 +42,6 @@ section .agreement_tit>h4>span {
 }
 
 section .agreement_tit .check label {
-=======
-section .agreement_tit > h4 > span{
-	font-size: 15px;
-	color: #b3b3b3;
-}
-section .agreement_tit .check label{
->>>>>>> cf0e7d3c8e31d53fec6d76f80cd1f6a8530ca462
 	font-size: 15px;
 	cursor: pointer;
 	color: #b3b3b3;
@@ -83,7 +53,6 @@ section .agreement_tit .check label{
 /* section .agreement_tit .check input{
 	display: none;
 } */
-<<<<<<< HEAD
 .check input:checked+label {
 	color: #F2BC8D;
 }
@@ -97,24 +66,10 @@ section .agreement_tit .terms_wrap * {
 }
 
 section .agreement_tit .terms_wrap h1 {
-=======
-.check input:checked + label{
-	color: #F2BC8D;
-}
-section .agreement_tit .terms_wrap{
-	margin-top: 0;
-	
-}
-section .agreement_tit .terms_wrap *{
-	font-size: 13px;
-}
-section .agreement_tit .terms_wrap h1{
->>>>>>> cf0e7d3c8e31d53fec6d76f80cd1f6a8530ca462
 	font-weight: bold;
 	text-align: center;
 	margin: 10px 0;
 }
-<<<<<<< HEAD
 
 table {
 	text-indent: initial;
@@ -142,37 +97,11 @@ td {
 }
 
 section .agreement_tit p {
-=======
-table{
-	text-indent: initial;
-	border-spacing: 0px;
-    border-collapse: collapse;
-	margin-left: 2%;
-}
-th{
-	width:  21vw;
-	padding: 6px 0;
-    font-weight: bold;
-    color: #F2BC8D;
-    text-align: left;
-    border-bottom: 1px solid #f1f2f4;
-    border-top: 1px solid #a1a6b2;
-}
-td{
-	border-bottom: 1px solid #f1f2f4;
-    line-height: 1.5;
-    padding: 9px 10px 9px 0;
-    font-size: 14px;
-    vertical-align: top;
-}
-section .agreement_tit p{
->>>>>>> cf0e7d3c8e31d53fec6d76f80cd1f6a8530ca462
 	margin-left: 2%;
 	color: red;
 	text-align: left;
 	padding-bottom: 3%;
 }
-<<<<<<< HEAD
 
 dl dt {
 	font-weight: bold;
@@ -183,21 +112,11 @@ dl li li {
 }
 
 #agreeAll {
-=======
-dl dt{
-	font-weight: bold;
-}
-dl li li{
-	color: #666;
-}
-#agreeAll{
->>>>>>> cf0e7d3c8e31d53fec6d76f80cd1f6a8530ca462
 	padding: 2% 41%;
 	position: absolute;
 	margin-top: 2%;
 	left: 1%;
 	font-size: 15px;
-<<<<<<< HEAD
 	color: #b3b3b3;
 	border: 1px solid #b3b3b3;
 }
@@ -212,24 +131,10 @@ input[type="checkbox"] {
 }
 
 #btnBox {
-=======
-    color: #b3b3b3;
-    border: 1px solid #b3b3b3;
-}
-input[type="checkbox"]{
-	display: none;
-}
-#agree3:checked + label {
-	color: #F2BC8D;
-    border: 1px solid #F2BC8D;
-}
-#btnBox{
->>>>>>> cf0e7d3c8e31d53fec6d76f80cd1f6a8530ca462
 	position: absolute;
 	width: 50%;
 	left: 30%;
 	height: 10%;
-<<<<<<< HEAD
 	top: 120%;
 }
 
@@ -252,25 +157,6 @@ input[type="checkbox"]{
 }
 
 input[type="button"] {
-=======
-    top: 120%;
-}
-#agreeNo{
-	background-color: #b8becc;
-	color: white;
-}
-#agreeYes{
-	background: #F29F8D;
-	color: white;
-}
-#agreeNo:hover{
-	background-color: #a1abc2;
-}
-#agreeYes:hover{
-	background-color: #E69785;
-}
-input[type="button"]{
->>>>>>> cf0e7d3c8e31d53fec6d76f80cd1f6a8530ca462
 	border: none;
 	width: 40%;
 	height: 8vh;
